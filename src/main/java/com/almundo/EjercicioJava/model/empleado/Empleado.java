@@ -88,7 +88,6 @@ public abstract class Empleado {
 			String mensaje = "El empleado " + this.nombre + " está atendiendo al cliente con numero de telefono "
 					+ this.llamadaActual.getNumeroTelefono();
 			System.out.println(mensaje);
-//			Dispatcher.getInstance().getDispatchLog().add(this.llamadaActual);
 			Thread.sleep(seconds);
 		} catch (InterruptedException ex) {
 			Thread.currentThread().interrupt();
