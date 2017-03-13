@@ -20,12 +20,7 @@ public class DispatcherTestCantidadMayorLimite extends AbastractBaseTest {
 		}
 		esperarFinLlamadasActivas();
 
-		//Los llamados adicionales los pone en espera
-		/*for (int i = 10; i < 12; i++) {
-			Llamada llamada = Dispatcher.getInstance().getDispatchLog().get(i);
-			assertTrue(llamada.tuvoEspera());
-		}*/
-		
+		//Los llamados adicionales los pone en espera		
 		int index = 0;
 		for(Llamada llamada : Dispatcher.getInstance().getDispatchLog()){
 			if(index >= 10){
